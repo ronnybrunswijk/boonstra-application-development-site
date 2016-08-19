@@ -27,6 +27,7 @@ var historyApiFallback = require('connect-history-api-fallback');
 var packageJson = require('./package.json');
 var crypto = require('crypto');
 var ensureFiles = require('./tasks/ensure-files.js');
+var portnumber = process.env.PORT
 
 // var ghPages = require('gulp-gh-pages');
 
@@ -216,7 +217,7 @@ gulp.task('clean', function() {
 // Watch files for changes & reload
 gulp.task('serve', ['styles'], function() {
   browserSync({
-    port: 5000,
+    port: portnumber,
     notify: false,
     logPrefix: 'PSK',
     snippetOptions: {
