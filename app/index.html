@@ -81,16 +81,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <iron-icon icon="home"></iron-icon>
             <span>Home</span>
           </a>
-
-          <a data-route="users" href="{{baseUrl}}users">
-            <iron-icon icon="info"></iron-icon>
-            <span>Users</span>
+          <a data-route="" href="{{baseUrl}}workexperience">
+            <span>Werkervaring</span>
           </a>
-
+          <a data-route="" href="{{baseUrl}}technical_skills">
+            <span>Technische vaardigheden</span>
+          </a>
           <a data-route="contact" href="{{baseUrl}}contact">
             <iron-icon icon="mail"></iron-icon>
             <span>Contact</span>
-          </a>
+          </a>          
         </paper-menu>
       </paper-scroll-header-panel>
 
@@ -113,7 +113,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
           <!-- Application sub title -->
           <div class="bottom bottom-container">
-            <div class="bottom-title">The future of the web today</div>
+            <div class="bottom-title">"Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live." - Martin Golding</div>
           </div>
         </paper-toolbar>
 
@@ -122,38 +122,30 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <iron-pages attr-for-selected="data-route" selected="{{route}}">
             <section data-route="home" tabindex="-1">
               <paper-material elevation="1">
-                <my-greeting></my-greeting>
-
-                <p class="subhead">You now have:</p>
-                <my-list></my-list>
+                Gespecialiseerd in Java, JEE, JavaScript, Angular
               </paper-material>
 
             </section>
 
-            <section data-route="users" tabindex="-1">
+            <section data-route="workexperience" tabindex="-1">
               <paper-material elevation="1">
-                <h1 class="page-title" tabindex="-1">Users</h1>
-                <p>This is the users section</p>
-                <a href$="{{baseUrl}}users/Addy">Addy</a><br>
-                <a href$="{{baseUrl}}users/Rob">Rob</a><br>
-                <a href$="{{baseUrl}}users/Chuck">Chuck</a><br>
-                <a href$="{{baseUrl}}users/Sam">Sam</a>
+                <h1 class="page-title" tabindex="-1">Werkervaring</h1>
               </paper-material>
             </section>
-
-            <section data-route="user-info" tabindex="-1">
-              <paper-material elevation="-1">
-                <h1 class="page-title" tabindex="-1">User: {{params.name}}</h1>
-                <div>This is {{params.name}}'s section</div>
+            
+            <section data-route="technical_skills" tabindex="-1">
+              <paper-material elevation="1">
+                <h1 class="page-title" tabindex="-1">Technische vaardigheden</h1>
               </paper-material>
-            </section>
+            </section>            
 
             <section data-route="contact" tabindex="-1">
               <paper-material elevation="1">
                 <h1 class="page-title" tabindex="-1">Contact</h1>
-                <p>This is the contact section</p>
+                <p>rienk.boonstra@gmail.com</p>
               </paper-material>
             </section>
+
           </iron-pages>
         </div>
       </paper-scroll-header-panel>
