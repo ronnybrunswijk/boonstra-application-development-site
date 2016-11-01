@@ -388,3 +388,10 @@ Like other Google projects, Polymer Starter Kit includes Google license headers 
 ## Contributing
 
 Polymer Starter Kit is a new project and is an ongoing effort by the Web Component community. We welcome your bug reports, PRs for improvements, docs and anything you think would improve the experience for other Polymer developers.
+
+### neie versje yn produksje sette
+1. handel wysigje
+2. gulp kommando utvoere (gewoan 'gulp')
+3. firebase serve -p $PORT -o $IP (om handel lokaal te testen)
+4. firebase deploy (om handel yn produksje te setten)
+
